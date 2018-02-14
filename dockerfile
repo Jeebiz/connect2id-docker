@@ -35,7 +35,6 @@ RUN wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-secure
   rm Connect2id-server.zip
 
 #Final Checks
-COPY entrypoint.sh /entrypoint.sh
 EXPOSE 8080
 
 CMD ["/connect2id-server-6.16/tomcat/bin/catalina.sh","run"]
